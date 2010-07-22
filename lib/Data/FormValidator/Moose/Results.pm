@@ -127,6 +127,31 @@ sub _build_type_message {
 	return "invalid value for an $type_name";
 }
 
-
-
 1;
+__END__
+
+=head1 NAME
+
+Data::FormValidator::Moose::Results 
+
+=head1 SEE ALSO
+
+Data::FormValidator::Results
+
+=head1 REPOSITORY
+
+ git://github.com/robinedwards/Data-FormValidator-Moose.git
+
+=head1 AUTHOR
+
+Rob Edwards, E<lt>rge@cpan.orgE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2010 by Rob Edwards
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.
+
+=cut

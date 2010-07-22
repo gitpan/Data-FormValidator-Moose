@@ -5,7 +5,7 @@ use Data::FormValidator::Moose::Results;
 use Perl6::Junction qw(any none);
 extends 'Data::FormValidator';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 Moose::Exporter->setup_import_methods(as_is=>[qw/profile validate/]);
 
@@ -189,13 +189,12 @@ override _check_profile_syntax=>sub {
 
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
-Data::FormValidator::Moose - Data::FormValidator with Moose types and added sugar
+Data::FormValidator::Moose - DFV with Moose types and added sugar
 
-=head1 VERSION 0.01
+=head1 VERSION 0.02
 
 =head1 SYNOPSIS
 
@@ -244,9 +243,13 @@ Validate parameters against a profile
 
   my $result = validate $params, against => $profile_name;
 
+Returns a Data::FormValidator::Moose::Results object
+
 =head1 SEE ALSO
 
-Data::FormValidator Moose::Util::TypeConstraints MooseX::Types
+Data::FormValidator Data::FormValidator::Results
+
+Moose::Util::TypeConstraints MooseX::Types
 
 =head1 REPOSITORY
 
@@ -254,7 +257,7 @@ Data::FormValidator Moose::Util::TypeConstraints MooseX::Types
 
 =head1 AUTHOR
 
-Rob Edwards, E<lt>robin.ge@gmail.comE<gt>
+Rob Edwards, E<lt>rge@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
